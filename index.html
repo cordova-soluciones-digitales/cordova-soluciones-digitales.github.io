@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="es-MX">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Cordova Soluciones – Agencia de Landing Pages en Guadalupe, N.L.</title>
-  <meta name="description" content="Creamos landing pages que llenan tu agenda de clientes. Para talleres, clínicas, restaurantes y profesionales en tu ciudad." />
+
+  <!-- ═══ SEO: Title & Description ═══ -->
+  <title>Landing Pages para Negocios en Monterrey | Cordova Soluciones</title>
+  <meta name="description" content="Página web profesional para tu negocio en Monterrey desde $7,000 MXN. Sin mensualidades. Dominio y hosting gratis. ¡Cotiza hoy por WhatsApp!" />
+
+  <!-- ═══ Schema Markup JSON-LD ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cordova Soluciones",
+    "description": "Agencia de landing pages y páginas web informativas para negocios locales en Monterrey, Guadalupe y área metropolitana. Dominio y hosting gratis. Pago único sin mensualidades.",
+    "url": "https://cordova-soluciones-digitales.github.io",
+    "telephone": "+52-81-2110-5318",
+    "email": "developer.cordova@gmail.com",
+    "priceRange": "$$$",
+    "currenciesAccepted": "MXN",
+    "paymentAccepted": "Tarjeta de crédito, transferencia bancaria",
+    "openingHours": "Mo-Fr 10:00-17:00",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rancho El Charco 113, Rancho Viejo",
+      "addressLocality": "Guadalupe",
+      "addressRegion": "Nuevo León",
+      "postalCode": "67192",
+      "addressCountry": "MX"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.648772,
+      "longitude": -100.191929
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Monterrey"
+      },
+      {
+        "@type": "City",
+        "name": "Guadalupe"
+      },
+      {
+        "@type": "City",
+        "name": "San Pedro Garza García"
+      },
+      {
+        "@type": "City",
+        "name": "Apodaca"
+      },
+      {
+        "@type": "City",
+        "name": "San Nicolás de los Garza"
+      }
+    ],
+    "sameAs": [
+      "https://wa.me/528121105318",
+      "https://instagram.com/cordovasoluciones",
+      "https://facebook.com/cordovasoluciones"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Paquetes de Landing Pages",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Landing Page Agenda Local",
+          "description": "Página web informativa para psicólogos, dentistas, podólogos, veterinarias, talleres mecánicos, barberías, boutiques, carwash, renta-venta de vestidos y trajes tuxedos (smoking) y ferreterías, en Monterrey y área metropolitana.",
+          "price": "7000",
+          "priceCurrency": "MXN"
+        },
+        {
+          "@type": "Offer",
+          "name": "Landing Page Menú y Delivery",
+          "description": "Página web con menú digital para cafeterías, taquerías, pizzerías y restaurantes en Monterrey y área metropolitana.",
+          "price": "7000",
+          "priceCurrency": "MXN"
+        }
+      ]
+    }
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -348,7 +426,7 @@
       display: flex; align-items: center; justify-content: center;
       margin-bottom: 16px;
     }
-    .pain-card h5 { font-size: 1rem; margin-bottom: 8px; }
+    .pain-card h3 { font-size: 1rem; margin-bottom: 8px; }
     .pain-card p { font-size: .88rem; color: var(--gray); margin: 0; line-height: 1.6; }
 
     /* ─── CAROUSEL ─── */
@@ -423,7 +501,7 @@
       letter-spacing: .5px;
     }
     .portfolio-tag-food { background: rgba(217,119,6,.12); color: #D97706; }
-    .portfolio-body h4 { font-size: 1.05rem; margin-bottom: 8px; }
+    .portfolio-body h3 { font-size: 1.05rem; margin-bottom: 8px; }
     .portfolio-body p { font-size: .85rem; color: var(--gray); margin-bottom: 16px; line-height: 1.6; }
     .badge-green-label {
       background: rgba(37,211,102,.1);
@@ -477,7 +555,7 @@
     .feature-card:hover::before { opacity: 1; }
     .feature-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(37,99,235,.1); }
     .feature-emoji { font-size: 2rem; margin-bottom: 14px; }
-    .feature-card h5 { font-size: 1rem; margin-bottom: 8px; }
+    .feature-card h3 { font-size: 1rem; margin-bottom: 8px; }
     .feature-card p { font-size: .87rem; color: var(--gray); margin: 0; line-height: 1.65; }
 
     /* ─── PRICING ─── */
@@ -892,7 +970,7 @@
       margin: 0 auto 14px;
       box-shadow: 0 6px 20px rgba(37,99,235,.3);
     }
-    .process-step h5 { font-size: .95rem; margin-bottom: 8px; }
+    .process-step h3 { font-size: .95rem; margin-bottom: 8px; }
     .process-step p { font-size: .84rem; color: var(--gray); }
     .process-arrow {
       display: none;
@@ -931,10 +1009,10 @@
 </div>
 
 <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
-<nav class="site-navbar navbar navbar-expand-lg">
+<nav class="site-navbar navbar navbar-expand-lg" aria-label="Navegación principal">
   <div class="container">
-    <a class="navbar-brand" href="#">Cordova<span>.</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <a class="navbar-brand" href="#" aria-label="Cordova Soluciones - Inicio">Cordova<span>.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
@@ -956,14 +1034,14 @@
 </nav>
 
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
-<section class="hero-section" id="inicio">
-  <div class="overlay"></div>
+<header class="hero-section" id="inicio">
+  <div class="overlay" aria-hidden="true"></div>
   <div class="container">
     <div class="row align-items-center gy-5">
       <div class="col-lg-7 hero-content" data-aos="fade-right">
         <div class="hero-subheading">🚀 Agencia de Landing Pages · Guadalupe, N.L.</div>
-        <h1 class="hero-h1">Nuestra Landing Page hará que la agenda de tu negocio se llene de clientes <span>listos para pagar.</span></h1>
-        <p class="hero-sub">Creadas específicamente para que talleres, clínicas, restaurantes y profesionales reciban llamadas y mensajes de WhatsApp <strong style="color:#fff">todos los días</strong> de personas en su misma ciudad.</p>
+        <h1 class="hero-h1">Tu página web informativa para negocios en Monterrey: haz que tu agenda se llene de clientes <span>listos para pagar.</span></h1>
+        <p class="hero-sub">Landing pages diseñadas para que talleres, clínicas, restaurantes y profesionales en Monterrey y área metropolitana reciban llamadas y mensajes de WhatsApp <strong style="color:#fff">todos los días</strong>.</p>
         <div class="d-flex flex-wrap gap-2">
           <a href="https://wa.me/528121105318?text=Hola%2C+quiero+mi+Landing+Page" target="_blank" class="btn-hero-primary">
             <i class="fab fa-whatsapp"></i> Quiero mi Landing Page
@@ -981,18 +1059,18 @@
       <div class="col-lg-5 hero-mockup d-flex justify-content-center" data-aos="fade-left" data-aos-delay="150">
         <div style="position:relative; display:inline-block;">
           <!-- Floating badge 1 -->
-          <div class="float-badge float-badge-1">
+          <div class="float-badge float-badge-1" aria-hidden="true">
             <i class="fab fa-whatsapp" style="color:var(--green)"></i>
             <span>Botón WhatsApp incluido</span>
           </div>
           <!-- Floating badge 2 -->
-          <div class="float-badge float-badge-2">
+          <div class="float-badge float-badge-2" aria-hidden="true">
             <span class="badge-dot"></span>
             <span>Clientes en línea ahora</span>
           </div>
           <!-- Phone mockup -->
-          <div class="hero-phone">
-            <div class="phone-notch"></div>
+          <div class="hero-phone" aria-label="Vista previa de una landing page para negocios en móvil" role="img">
+            <div class="phone-notch" aria-hidden="true"></div>
             <div class="phone-screen">
               <div class="phone-logo">Tu<span>Marca</span></div>
               <div class="phone-headline">¡Agenda tu cita hoy mismo y recibe atención personalizada!</div>
@@ -1014,42 +1092,42 @@
       </div>
     </div>
   </div>
-</section>
+</header>
 
 <!-- ═══════════════════════ DOLOR / IDENTIFICACIÓN ═══════════════════════ -->
-<section class="pain-section" id="dolor">
+<section class="pain-section" id="dolor" aria-labelledby="dolor-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">¿Te suena familiar?</div>
-      <h2 class="section-title">¿Inviertes en publicidad pero nadie te llama?</h2>
-      <p class="section-sub mx-auto">Un sitio web tradicional marea a la gente con demasiada información. Si eres <strong>dentista, psicólogo, dueño de una veterinaria o tienes un restaurante</strong>, no necesitas una web corporativa de 10 páginas; necesitas una <strong>máquina de captar clientes</strong> que funcione en tu celular.</p>
+      <h2 class="section-title" id="dolor-title">¿Inviertes en publicidad pero nadie te llama?</h2>
+      <p class="section-sub mx-auto">Un sitio web tradicional marea a la gente con demasiada información. Si eres <strong>dentista, psicólogo, dueño de una veterinaria o tienes un restaurante</strong>, no necesitas una web corporativa de 10 páginas; necesitas una <strong>página informativa que capte clientes</strong> y funcione en cualquier celular.</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
         <div class="pain-card">
-          <div class="pain-icon"><i class="fas fa-tooth"></i></div>
-          <h5>Dentistas & Clínicas</h5>
-          <p>Tus pacientes buscan desde el celular. Una landing directa convierte esa búsqueda en una cita agendada en segundos.</p>
+          <div class="pain-icon" aria-hidden="true"><i class="fas fa-tooth"></i></div>
+          <h3>Dentistas &amp; Clínicas</h3>
+          <p>Tus pacientes buscan desde el celular. Una landing page directa convierte esa búsqueda en una cita agendada en segundos.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
         <div class="pain-card">
-          <div class="pain-icon"><i class="fas fa-brain"></i></div>
-          <h5>Psicólogos & Terapeutas</h5>
-          <p>La privacidad y confianza lo son todo. Una página enfocada en tu especialidad genera la conexión que tus pacientes necesitan para dar el primer paso.</p>
+          <div class="pain-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+          <h3>Psicólogos &amp; Terapeutas</h3>
+          <p>La privacidad y confianza lo son todo. Una página web informativa enfocada en tu especialidad genera la conexión que tus pacientes necesitan para dar el primer paso.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
         <div class="pain-card">
-          <div class="pain-icon"><i class="fas fa-tools"></i></div>
-          <h5>Talleres & Barberías</h5>
-          <p>Cuando alguien busca "taller mecánico cerca de mí", tu landing aparece primero y les muestra exactamente cómo llegar y qué ofreces.</p>
+          <div class="pain-icon" aria-hidden="true"><i class="fas fa-tools"></i></div>
+          <h3>Talleres &amp; Barberías</h3>
+          <p>Cuando alguien busca "taller mecánico cerca de mí", tu landing page aparece primero y les muestra exactamente cómo llegar y qué ofreces.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
         <div class="pain-card">
-          <div class="pain-icon"><i class="fas fa-utensils"></i></div>
-          <h5>Restaurantes & Cafeterías</h5>
+          <div class="pain-icon" aria-hidden="true"><i class="fas fa-utensils"></i></div>
+          <h3>Restaurantes &amp; Cafeterías</h3>
           <p>Tu menú digital en el celular, con un botón de WhatsApp para hacer el pedido. Sin intermediarios, sin comisiones por plataformas externas.</p>
         </div>
       </div>
@@ -1058,30 +1136,30 @@
 </section>
 
 <!-- ═══════════════════════ CAROUSEL ═══════════════════════ -->
-<section class="carousel-section">
+<section class="carousel-section" aria-labelledby="galeria-title">
   <div class="container">
     <div class="text-center mb-4" data-aos="fade-up">
       <div class="section-label">Galería</div>
-      <h2 class="section-title" style="color:#fff">Negocios locales que ya convierten</h2>
+      <h2 class="section-title" id="galeria-title" style="color:#fff">Negocios locales en Monterrey que ya convierten</h2>
     </div>
-    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" aria-label="Galería de tipos de negocios con landing pages">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row g-3">
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&q=80" class="carousel-img" alt="Clínica dental" />
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&q=80" class="carousel-img" alt="Clínica dental con página web informativa en Monterrey" loading="lazy" />
               <p class="carousel-caption-label">Clínica Dental</p>
             </div>
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" class="carousel-img" alt="Restaurante" />
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" class="carousel-img" alt="Restaurante con menú digital y pedidos por WhatsApp en Monterrey" loading="lazy" />
               <p class="carousel-caption-label">Restaurante</p>
             </div>
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&q=80" class="carousel-img" alt="Barbería" />
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&q=80" class="carousel-img" alt="Barbería con landing page para agendar citas en Guadalupe NL" loading="lazy" />
               <p class="carousel-caption-label">Barbería</p>
             </div>
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&q=80" class="carousel-img" alt="Veterinaria" />
+              <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&q=80" class="carousel-img" alt="Veterinaria con página web para agendar consultas en Monterrey" loading="lazy" />
               <p class="carousel-caption-label">Veterinaria</p>
             </div>
           </div>
@@ -1089,40 +1167,40 @@
         <div class="carousel-item">
           <div class="row g-3">
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" class="carousel-img" alt="Gym" />
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" class="carousel-img" alt="Gimnasio con tarjeta de presentación digital en Monterrey" loading="lazy" />
               <p class="carousel-caption-label">Gimnasio</p>
             </div>
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400&q=80" class="carousel-img" alt="Cafetería" />
+              <img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400&q=80" class="carousel-img" alt="Cafetería con landing page y menú digital en Guadalupe NL" loading="lazy" />
               <p class="carousel-caption-label">Cafetería</p>
             </div>
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80" class="carousel-img" alt="Consultorio" />
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80" class="carousel-img" alt="Consultorio médico con página web para citas en Monterrey" loading="lazy" />
               <p class="carousel-caption-label">Consultorio</p>
             </div>
             <div class="col-6 col-md-3">
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&q=80" class="carousel-img" alt="Ferretería" />
+              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&q=80" class="carousel-img" alt="Taller mecánico con página informativa en área metropolitana de Monterrey" loading="lazy" />
               <p class="carousel-caption-label">Taller Mecánico</p>
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
+      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev" aria-label="Anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
+      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next" aria-label="Siguiente">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </button>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════ PORTAFOLIO ═══════════════════════ -->
-<section class="portfolio-section" id="portafolio">
+<section class="portfolio-section" id="portafolio" aria-labelledby="portafolio-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">Portafolio</div>
-      <h2 class="section-title">Elige el modelo que va con tu negocio</h2>
+      <h2 class="section-title" id="portafolio-title">Elige el modelo de landing page que va con tu negocio</h2>
       <div class="divider-line mx-auto"></div>
       <span class="badge-green-label">
         <i class="fas fa-circle-check"></i> Todas optimizadas con botón directo a WhatsApp y mapa de Google Maps integrado
@@ -1131,8 +1209,8 @@
     <div class="row g-4">
       <!-- Card 1: Servicios -->
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
-        <div class="portfolio-card">
-          <div class="portfolio-mockup">
+        <article class="portfolio-card">
+          <div class="portfolio-mockup" aria-hidden="true">
             <div class="portfolio-mockup-screen">
               <div class="screen-bar accent-bar"></div>
               <div class="screen-bar"></div>
@@ -1144,18 +1222,18 @@
           </div>
           <div class="portfolio-body">
             <div class="portfolio-tag">🏥 Servicios / Citas</div>
-            <h4>Agenda Local</h4>
+            <h3>Agenda Local</h3>
             <p>Para psicólogos, dentistas, veterinarias, talleres, barberías y ferreterías. Formulario de citas + botón WhatsApp + mapa de ubicación.</p>
             <a href="https://wa.me/528121105318?text=Quiero+ver+el+demo+de+Agenda%2FClinica" target="_blank" class="btn-portfolio">
               <i class="fas fa-play-circle"></i> Ver Demo de Agencia/Clínica
             </a>
           </div>
-        </div>
+        </article>
       </div>
       <!-- Card 2: Gastronomía -->
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="portfolio-card">
-          <div class="portfolio-mockup portfolio-mockup-food">
+        <article class="portfolio-card">
+          <div class="portfolio-mockup portfolio-mockup-food" aria-hidden="true">
             <div class="portfolio-mockup-screen">
               <div class="screen-bar" style="background:var(--accent);"></div>
               <div class="screen-bar short" style="background:rgba(255,255,255,.5);"></div>
@@ -1167,62 +1245,62 @@
           </div>
           <div class="portfolio-body">
             <div class="portfolio-tag portfolio-tag-food">🍔 Gastronomía</div>
-            <h4>Menú & Delivery</h4>
+            <h3>Menú &amp; Delivery</h3>
             <p>Para cafeterías, taquerías, pizzerías y restaurantes. Menú digital interactivo, botón de pedidos por WhatsApp y zona de cobertura.</p>
             <a href="https://wa.me/528121105318?text=Quiero+ver+el+demo+de+Menu+Digital" target="_blank" class="btn-portfolio">
               <i class="fas fa-play-circle"></i> Ver Demo de Menú Digital / Delivery
             </a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════ PROCESO ═══════════════════════ -->
-<section class="process-section" id="proceso">
+<section class="process-section" id="proceso" aria-labelledby="proceso-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">Así funciona</div>
-      <h2 class="section-title">Tu landing lista en 2 días</h2>
+      <h2 class="section-title" id="proceso-title">Tu landing page lista en 5 días</h2>
     </div>
     <div class="row g-3">
       <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="0">
         <div class="process-step">
-          <div class="step-num">1</div>
-          <h5>Nos contactas</h5>
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3>Nos contactas</h3>
           <p>Por WhatsApp o teléfono. Sin formularios complicados.</p>
-          <span class="process-arrow"><i class="fas fa-chevron-right"></i></span>
+          <span class="process-arrow" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
         </div>
       </div>
       <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="80">
         <div class="process-step">
-          <div class="step-num">2</div>
-          <h5>Nos das tu info</h5>
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3>Nos das tu info</h3>
           <p>Logo, precios, fotos y dirección. Nosotros hacemos el resto.</p>
-          <span class="process-arrow"><i class="fas fa-chevron-right"></i></span>
+          <span class="process-arrow" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
         </div>
       </div>
       <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="160">
         <div class="process-step">
-          <div class="step-num">3</div>
-          <h5>Diseñamos</h5>
-          <p>En 1–2 días hábiles tienes tu landing para revisión.</p>
-          <span class="process-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3>Diseñamos</h3>
+          <p>En 3–5 días hábiles tienes tu landing para revisión.</p>
+          <span class="process-arrow" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
         </div>
       </div>
       <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="240">
         <div class="process-step">
-          <div class="step-num">4</div>
-          <h5>Apruebas</h5>
+          <div class="step-num" aria-hidden="true">4</div>
+          <h3>Apruebas</h3>
           <p>Hacemos ajustes sin costo hasta que quedes 100% satisfecho.</p>
-          <span class="process-arrow"><i class="fas fa-chevron-right"></i></span>
+          <span class="process-arrow" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
         </div>
       </div>
       <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="320">
         <div class="process-step">
-          <div class="step-num">5</div>
-          <h5>¡A captar clientes!</h5>
+          <div class="step-num" aria-hidden="true">5</div>
+          <h3>¡A captar clientes!</h3>
           <p>Publicamos en tu dominio y conectamos tu WhatsApp.</p>
         </div>
       </div>
@@ -1231,39 +1309,39 @@
 </section>
 
 <!-- ═══════════════════════ CARACTERÍSTICAS ═══════════════════════ -->
-<section class="features-section" id="caracteristicas">
+<section class="features-section" id="caracteristicas" aria-labelledby="features-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">Sin tecnicismos</div>
-      <h2 class="section-title">Lo que tu landing hace por ti</h2>
+      <h2 class="section-title" id="features-title">Lo que tu página web hace por tu negocio</h2>
       <p class="section-sub mx-auto">Explicado como si tu vecino te lo dijera, porque lo importante es que entiendas cómo va a llegar más gente a tu negocio.</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
         <div class="feature-card">
-          <div class="feature-emoji">📍</div>
-          <h5>Ubicación Exacta</h5>
+          <div class="feature-emoji" aria-hidden="true">📍</div>
+          <h3>Ubicación Exacta</h3>
           <p>Integración nativa con Google Maps para que los clientes sepan cómo llegar a tu taller, barbería o pizzería en un clic.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
         <div class="feature-card">
-          <div class="feature-emoji">💬</div>
-          <h5>Botón WhatsApp Inteligente</h5>
+          <div class="feature-emoji" aria-hidden="true">💬</div>
+          <h3>Botón WhatsApp Inteligente</h3>
           <p>Configurado con un mensaje automático —por ejemplo: "Hola, quiero agendar una cita para mi mascota"— facilitando el cierre de la venta.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
         <div class="feature-card">
-          <div class="feature-emoji">📱</div>
-          <h5>100% Móvil</h5>
+          <div class="feature-emoji" aria-hidden="true">📱</div>
+          <h3>100% Móvil</h3>
           <p>El 95% de la gente busca un restaurante o un mecánico desde el celular mientras va en la calle. Tu página se verá perfecta ahí.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
         <div class="feature-card">
-          <div class="feature-emoji">⚡</div>
-          <h5>Carga en 1 Segundo</h5>
+          <div class="feature-emoji" aria-hidden="true">⚡</div>
+          <h3>Carga en 1 Segundo</h3>
           <p>Si tu página tarda en cargar, el cliente se va con la competencia de la siguiente esquina. Las nuestras son ultra rápidas.</p>
         </div>
       </div>
@@ -1272,32 +1350,32 @@
 </section>
 
 <!-- ═══════════════════════ PRECIOS ═══════════════════════ -->
-<section class="pricing-section" id="precios">
+<section class="pricing-section" id="precios" aria-labelledby="precios-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">Precios transparentes</div>
-      <h2 class="section-title">Sin sorpresas, sin mensualidades</h2>
+      <h2 class="section-title" id="precios-title">Sin sorpresas, sin mensualidades</h2>
       <p class="section-sub mx-auto">Pago único. Sin contratos anuales. Sin quedarte amarrado mes a mes.</p>
     </div>
     <div class="row g-4 justify-content-center">
       <!-- Paquete 1 -->
       <div class="col-md-5" data-aos="fade-up" data-aos-delay="0">
         <div class="pricing-card">
-          <div class="pricing-icon">🏥</div>
+          <div class="pricing-icon" aria-hidden="true">🏥</div>
           <div class="pricing-name">Agenda Local</div>
           <div class="pricing-desc">Para Psicólogos, dentistas, veterinarias, talleres, barberías, ferreterías.</div>
           <div class="pricing-old">Precio normal: $9,000 MXN</div>
           <div class="pricing-price">$7,000 <small style="font-size:1rem;font-weight:400">MXN</small></div>
           <span class="promo-tag">🎉 Ahorra $2,000 · Precio de lanzamiento</span>
           <ul class="feature-list">
-            <li><i class="fas fa-check-circle"></i> Landing page completa</li>
-            <li><i class="fas fa-check-circle"></i> Formulario de citas</li>
-            <li><i class="fas fa-check-circle"></i> Botón directo a WhatsApp</li>
-            <li><i class="fas fa-check-circle"></i> Mapa de ubicación</li>
-            <li><i class="fas fa-check-circle"></i> Sección de opiniones de clientes</li>
-            <li><i class="fas fa-check-circle"></i> Lista de servicios y precios</li>
-            <li><i class="fas fa-check-circle"></i> Dominio <em>tu-marca.github.io</em> GRATIS</li>
-            <li><i class="fas fa-check-circle"></i> Hospedaje en tu cuenta GitHub GRATIS</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Landing page completa</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Formulario de citas</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Botón directo a WhatsApp</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Mapa de ubicación</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Sección de opiniones de clientes</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Lista de servicios y precios</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dominio <em>tu-marca.github.io</em> GRATIS</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Hospedaje en tu cuenta GitHub GRATIS</li>
           </ul>
           <a href="https://wa.me/528121105318?text=Quiero+el+Paquete+Agenda+Local" target="_blank" class="btn-pricing">
             <i class="fab fa-whatsapp me-2"></i>Quiero este paquete
@@ -1308,21 +1386,21 @@
       <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
         <div class="pricing-card featured">
           <div class="pricing-badge">⭐ Más Popular</div>
-          <div class="pricing-icon">🍔</div>
-          <div class="pricing-name">Menú & Delivery</div>
+          <div class="pricing-icon" aria-hidden="true">🍔</div>
+          <div class="pricing-name">Menú &amp; Delivery</div>
           <div class="pricing-desc">Para cafeterías, taquerías, pizzerías y restaurantes.</div>
           <div class="pricing-old">Precio normal: $9,000 MXN</div>
           <div class="pricing-price">$7,000 <small style="font-size:1rem;font-weight:400">MXN</small></div>
           <span class="promo-tag">🎉 Ahorra $2,000 · Precio de lanzamiento</span>
           <ul class="feature-list">
-            <li><i class="fas fa-check-circle"></i> Landing page completa</li>
-            <li><i class="fas fa-check-circle"></i> Menú digital interactivo (móvil)</li>
-            <li><i class="fas fa-check-circle"></i> Botón de pedidos por WhatsApp</li>
-            <li><i class="fas fa-check-circle"></i> Horarios de apertura</li>
-            <li><i class="fas fa-check-circle"></i> Mapa de cobertura de reparto</li>
-            <li><i class="fas fa-check-circle"></i> Galería de platillos</li>
-            <li><i class="fas fa-check-circle"></i> Dominio <em>tu-marca.github.io</em> GRATIS</li>
-            <li><i class="fas fa-check-circle"></i> Hospedaje en tu cuenta GitHub GRATIS</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Landing page completa</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Menú digital interactivo (móvil)</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Botón de pedidos por WhatsApp</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Horarios de apertura</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Mapa de cobertura de reparto</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Galería de platillos</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dominio <em>tu-marca.github.io</em> GRATIS</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Hospedaje en tu cuenta GitHub GRATIS</li>
           </ul>
           <a href="https://wa.me/528121105318?text=Quiero+el+Paquete+Menu+y+Delivery" target="_blank" class="btn-pricing">
             <i class="fab fa-whatsapp me-2"></i>Quiero este paquete
@@ -1336,7 +1414,7 @@
       <div class="row g-3">
         <div class="col-md-4">
           <div class="pricing-extra-item">
-            <div class="pricing-extra-icon">🌐</div>
+            <div class="pricing-extra-icon" aria-hidden="true">🌐</div>
             <div>
               <div class="pricing-extra-title">Dominio Gratis</div>
               <div class="pricing-extra-desc"><em>tu-marca.github.io</em> · publicado en tu propia cuenta de GitHub</div>
@@ -1345,7 +1423,7 @@
         </div>
         <div class="col-md-4">
           <div class="pricing-extra-item">
-            <div class="pricing-extra-icon">☁️</div>
+            <div class="pricing-extra-icon" aria-hidden="true">☁️</div>
             <div>
               <div class="pricing-extra-title">Hospedaje Gratis</div>
               <div class="pricing-extra-desc">Sin pagar hosting mensual. Todo en GitHub Pages.</div>
@@ -1354,7 +1432,7 @@
         </div>
         <div class="col-md-4">
           <div class="pricing-extra-item">
-            <div class="pricing-extra-icon">🔧</div>
+            <div class="pricing-extra-icon" aria-hidden="true">🔧</div>
             <div>
               <div class="pricing-extra-title">Mantenimiento</div>
               <div class="pricing-extra-desc">Solo si lo necesitas, pago único. Sin suscripción mensual.</div>
@@ -1374,28 +1452,28 @@
         <span class="msi-badge">9 MSI</span>
         <span class="msi-badge">12 MSI</span>
         <span class="msi-badge">15–24 MSI (BBVA · Citibanamex)</span>
-        <span class="msi-badge"><i class="fab fa-cc-visa"></i> Visa</span>
-        <span class="msi-badge"><i class="fab fa-cc-mastercard"></i> Mastercard</span>
-        <span class="msi-badge"><i class="fab fa-cc-amex"></i> AmEx</span>
+        <span class="msi-badge"><i class="fab fa-cc-visa" aria-hidden="true"></i> Visa</span>
+        <span class="msi-badge"><i class="fab fa-cc-mastercard" aria-hidden="true"></i> Mastercard</span>
+        <span class="msi-badge"><i class="fab fa-cc-amex" aria-hidden="true"></i> AmEx</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════ TESTIMONIOS ═══════════════════════ -->
-<section class="testimony-section" id="testimonios">
+<section class="testimony-section" id="testimonios" aria-labelledby="testimonios-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">Lo que dicen</div>
-      <h2 class="section-title">Negocios locales que ya lo vivieron</h2>
+      <h2 class="section-title" id="testimonios-title">Negocios locales en Monterrey que ya lo vivieron</h2>
     </div>
     <div class="row g-4">
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
         <div class="testimony-card">
-          <div class="stars">★★★★★</div>
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
           <p class="testimony-text">"Antes nadie me llamaba del internet. Ahorita recibo 4 o 5 mensajes de WhatsApp a la semana de gente que me encontró en Google. La verdad me sorprendió lo rápido que funcionó."</p>
           <div class="testimony-author">
-            <div class="author-avatar">MR</div>
+            <div class="author-avatar" aria-hidden="true">MR</div>
             <div>
               <div class="author-name">Miguel Rodríguez</div>
               <div class="author-biz">Taller Mecánico · Monterrey</div>
@@ -1405,10 +1483,10 @@
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
         <div class="testimony-card">
-          <div class="stars">★★★★★</div>
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
           <p class="testimony-text">"Mis pacientes ahora llegan con la cita ya confirmada por WhatsApp. Ya no se me va tiempo contestando llamadas para explicar dónde estoy o cuánto cobro. Todo está en la página."</p>
           <div class="testimony-author">
-            <div class="author-avatar">LP</div>
+            <div class="author-avatar" aria-hidden="true">LP</div>
             <div>
               <div class="author-name">Lic. Laura Peña</div>
               <div class="author-biz">Psicóloga · Guadalupe, N.L.</div>
@@ -1418,10 +1496,10 @@
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
         <div class="testimony-card">
-          <div class="stars">★★★★★</div>
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
           <p class="testimony-text">"El menú digital fue un hit. La gente escanea el código QR en la mesa y ya hace su pedido por WhatsApp. Menos errores, más propinas y mis meseros más contentos."</p>
           <div class="testimony-author">
-            <div class="author-avatar">CF</div>
+            <div class="author-avatar" aria-hidden="true">CF</div>
             <div>
               <div class="author-name">Carlos Flores</div>
               <div class="author-biz">Restaurante La Fogata · Apodaca</div>
@@ -1434,21 +1512,21 @@
 </section>
 
 <!-- ═══════════════════════ FAQ ═══════════════════════ -->
-<section class="faq-section" id="faq">
+<section class="faq-section" id="faq" aria-labelledby="faq-title">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="text-center mb-5" data-aos="fade-up">
           <div class="section-label">Preguntas frecuentes</div>
-          <h2 class="section-title">Lo que todos preguntan antes de decir sí</h2>
+          <h2 class="section-title" id="faq-title">Lo que todos preguntan antes de decir sí</h2>
         </div>
         <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="80">
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
                 💰 ¿Tengo que pagar una mensualidad?
               </button>
-            </h2>
+            </h3>
             <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
                 No. Solo 1 pago único de la landing page. Sin suscripción mensual, sin contratos anuales. Es tuya para siempre. Si en el futuro necesitas actualizarla (cambio de precios, menú nuevo), ese ajuste también es un pago único.
@@ -1456,11 +1534,11 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
                 📱 No sé usar computadoras, ¿cómo atiendo a los clientes?
               </button>
-            </h2>
+            </h3>
             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
                 No necesitas saber de sistemas. Todos los clientes te llegarán directamente como un mensaje normal a tu cuenta de WhatsApp personal. Tú lo ves igual que un mensaje de tu familia y respondes desde ahí.
@@ -1468,23 +1546,23 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
                 🔍 ¿Apareceré en Google?
               </button>
-            </h2>
+            </h3>
             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                Claro. La landing incluye la optimización básica para que se enlace con tu ficha de Google Business Profile, que es lo que aparece cuando alguien busca tu tipo de negocio cerca de su ubicación.
+                Claro. La landing page incluye la optimización básica para que se enlace con tu ficha de Google Business Profile, que es lo que aparece cuando alguien busca tu tipo de negocio cerca de su ubicación.
               </div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
                 🔧 ¿Qué pasa si cambian mis precios o mi menú?
               </button>
-            </h2>
+            </h3>
             <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
                 Nos contactas y realizamos el mantenimiento. Será un pago único por ajuste, no estarás amarrado mes a mes. Simple y sin sorpresas.
@@ -1492,14 +1570,14 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
                 ⏱️ ¿Cuánto tiempo tardan en entregarla?
               </button>
-            </h2>
+            </h3>
             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                Entre 1 y 2 días hábiles desde que nos das la información de tu negocio (logo, fotos, precios, dirección). Hacemos ajustes sin costo hasta que quedes 100% satisfecho.
+                Entre 3 y 5 días hábiles desde que nos das la información de tu negocio (logo, fotos, precios, dirección). Hacemos ajustes sin costo hasta que quedes 100% satisfecho.
               </div>
             </div>
           </div>
@@ -1510,11 +1588,11 @@
 </section>
 
 <!-- ═══════════════════════ SOCIAL WIDGETS ═══════════════════════ -->
-<section class="social-section" id="redes">
+<section class="social-section" id="redes" aria-labelledby="redes-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">Redes Sociales</div>
-      <h2 class="section-title">Síguenos y mantente al tanto</h2>
+      <h2 class="section-title" id="redes-title">Síguenos y mantente al tanto</h2>
       <p class="section-sub mx-auto">Compartimos tips de marketing local, ejemplos de landing pages y promociones exclusivas.</p>
     </div>
     <div class="row g-4">
@@ -1523,7 +1601,7 @@
         <div class="social-card social-card-wa">
           <div class="social-card-inner">
             <div class="social-handle">
-              <span class="social-handle-icon" style="color:#25D366"><i class="fab fa-whatsapp"></i></span>
+              <span class="social-handle-icon" style="color:#25D366" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
               <div>
                 <div class="social-handle-name">WhatsApp Directo</div>
                 <div class="social-handle-user">+52 81 2110-5318</div>
@@ -1548,7 +1626,7 @@
         <div class="social-card social-card-ig">
           <div class="social-card-inner">
             <div class="social-handle">
-              <span class="social-handle-icon" style="color:#E1306C"><i class="fab fa-instagram"></i></span>
+              <span class="social-handle-icon" style="color:#E1306C" aria-hidden="true"><i class="fab fa-instagram"></i></span>
               <div>
                 <div class="social-handle-name">Instagram</div>
                 <div class="social-handle-user">@cordovasoluciones</div>
@@ -1572,7 +1650,7 @@
         <div class="social-card social-card-fb">
           <div class="social-card-inner">
             <div class="social-handle">
-              <span class="social-handle-icon" style="color:#1877F2"><i class="fab fa-facebook"></i></span>
+              <span class="social-handle-icon" style="color:#1877F2" aria-hidden="true"><i class="fab fa-facebook"></i></span>
               <div>
                 <div class="social-handle-name">Facebook</div>
                 <div class="social-handle-user">Cordova Soluciones</div>
@@ -1596,10 +1674,10 @@
 </section>
 
 <!-- ═══════════════════════ CTA PRINCIPAL ═══════════════════════ -->
-<section class="cta-section">
+<section class="cta-section" aria-labelledby="cta-title">
   <div class="container">
     <div class="section-label" style="margin-bottom:16px;">¿Listo para empezar?</div>
-    <h2>Tu primera landing page,<br />a solo un mensaje de distancia.</h2>
+    <h2 id="cta-title">Tu primera landing page,<br />a solo un mensaje de distancia.</h2>
     <p>Sin compromisos. Sin formularios complicados. Solo escríbenos y te cotizamos hoy mismo.</p>
     <div class="cta-btns">
       <a href="https://wa.me/528121105318?text=Hola%2C+quiero+mi+Landing+Page" target="_blank" class="btn-cta-wa">
@@ -1613,11 +1691,11 @@
 </section>
 
 <!-- ═══════════════════════ MAPA ═══════════════════════ -->
-<section class="map-section" id="contacto">
+<section class="map-section" id="contacto" aria-labelledby="contacto-title">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <div class="section-label">Visítanos</div>
-      <h2 class="section-title">¿Dónde estamos?</h2>
+      <h2 class="section-title" id="contacto-title">¿Dónde estamos?</h2>
     </div>
     <div class="row g-4 align-items-stretch">
       <div class="col-lg-7" data-aos="fade-right">
@@ -1630,28 +1708,29 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Cordova Soluciones en Guadalupe, Nuevo León"
           ></iframe>
         </div>
       </div>
       <div class="col-lg-5" data-aos="fade-left">
-        <div class="contact-info-card">
-          <h4 style="margin-bottom:24px;">Información de contacto</h4>
+        <address class="contact-info-card">
+          <h3 style="margin-bottom:24px;">Información de contacto</h3>
           <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
             <div>
               <div class="contact-label">Dirección</div>
               <div class="contact-value">Rancho El Charco 113, Rancho Viejo,<br />67192 Guadalupe, N.L.</div>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-phone-alt"></i></div>
             <div>
               <div class="contact-label">Teléfono</div>
               <div class="contact-value"><a href="tel:+528121105318">+52 81 2110-5318</a></div>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></div>
             <div>
               <div class="contact-label">WhatsApp</div>
               <div class="contact-value">
@@ -1660,7 +1739,7 @@
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-clock"></i></div>
             <div>
               <div class="contact-label">Horario</div>
               <div class="contact-value">
@@ -1672,62 +1751,62 @@
           <a href="https://wa.me/528121105318?text=Hola%2C+quiero+cotizar+mi+Landing+Page" target="_blank" class="btn-cta-wa mt-2" style="display:flex;align-items:center;gap:8px;justify-content:center;border-radius:10px;padding:13px 20px;background:var(--green);color:#fff;font-weight:800;text-decoration:none;">
             <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
           </a>
-        </div>
+        </address>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-<footer>
+<footer aria-label="Pie de página Cordova Soluciones">
   <div class="container">
     <div class="row g-5">
       <!-- Brand -->
       <div class="col-md-4">
         <div class="footer-brand">Cordova<span>.</span></div>
-        <p class="footer-desc">Agencia de landing pages para negocios locales en Nuevo León. Hacemos que la agenda de tu negocio se llene de clientes listos para pagar.</p>
+        <p class="footer-desc">Agencia de landing pages y páginas web informativas para negocios locales en Monterrey y Nuevo León. Hacemos que la agenda de tu negocio se llene de clientes listos para pagar.</p>
         <div class="footer-social">
-          <a href="https://wa.me/528121105318" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://instagram.com/cordovasoluciones" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://facebook.com/cordovasoluciones" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/528121105318" target="_blank" title="WhatsApp Cordova Soluciones" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/cordovasoluciones" target="_blank" title="Instagram @cordovasoluciones" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/cordovasoluciones" target="_blank" title="Facebook Cordova Soluciones" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       <!-- Links -->
       <div class="col-md-2 col-6">
         <div class="footer-heading">Navegación</div>
         <ul class="footer-links">
-          <li><a href="#inicio"><i class="fas fa-chevron-right"></i>Inicio</a></li>
-          <li><a href="#portafolio"><i class="fas fa-chevron-right"></i>Portafolio</a></li>
-          <li><a href="#caracteristicas"><i class="fas fa-chevron-right"></i>Características</a></li>
-          <li><a href="#precios"><i class="fas fa-chevron-right"></i>Precios</a></li>
-          <li><a href="#faq"><i class="fas fa-chevron-right"></i>FAQ</a></li>
-          <li><a href="#contacto"><i class="fas fa-chevron-right"></i>Contacto</a></li>
+          <li><a href="#inicio"><i class="fas fa-chevron-right" aria-hidden="true"></i>Inicio</a></li>
+          <li><a href="#portafolio"><i class="fas fa-chevron-right" aria-hidden="true"></i>Portafolio</a></li>
+          <li><a href="#caracteristicas"><i class="fas fa-chevron-right" aria-hidden="true"></i>Características</a></li>
+          <li><a href="#precios"><i class="fas fa-chevron-right" aria-hidden="true"></i>Precios</a></li>
+          <li><a href="#faq"><i class="fas fa-chevron-right" aria-hidden="true"></i>FAQ</a></li>
+          <li><a href="#contacto"><i class="fas fa-chevron-right" aria-hidden="true"></i>Contacto</a></li>
         </ul>
       </div>
       <!-- Servicios -->
       <div class="col-md-3 col-6">
         <div class="footer-heading">Servicios</div>
         <ul class="footer-links">
-          <li><a href="#portafolio"><i class="fas fa-chevron-right"></i>Landing · Agenda Local</a></li>
-          <li><a href="#portafolio"><i class="fas fa-chevron-right"></i>Landing · Menú & Delivery</a></li>
-          <li><a href="#caracteristicas"><i class="fas fa-chevron-right"></i>Botón WhatsApp</a></li>
-          <li><a href="#caracteristicas"><i class="fas fa-chevron-right"></i>Google Maps integrado</a></li>
-          <li><a href="#precios"><i class="fas fa-chevron-right"></i>Mantenimiento</a></li>
+          <li><a href="#portafolio"><i class="fas fa-chevron-right" aria-hidden="true"></i>Landing Page · Agenda Local</a></li>
+          <li><a href="#portafolio"><i class="fas fa-chevron-right" aria-hidden="true"></i>Landing Page · Menú &amp; Delivery</a></li>
+          <li><a href="#caracteristicas"><i class="fas fa-chevron-right" aria-hidden="true"></i>Botón WhatsApp</a></li>
+          <li><a href="#caracteristicas"><i class="fas fa-chevron-right" aria-hidden="true"></i>Google Maps integrado</a></li>
+          <li><a href="#precios"><i class="fas fa-chevron-right" aria-hidden="true"></i>Mantenimiento</a></li>
         </ul>
       </div>
       <!-- Contacto -->
       <div class="col-md-3">
         <div class="footer-heading">Contacto</div>
         <div class="footer-contact-item">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
           <span>Rancho El Charco 113, Rancho Viejo, 67192 Guadalupe, N.L.</span>
         </div>
         <div class="footer-contact-item">
-          <i class="fas fa-phone-alt"></i>
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
           <span><a href="tel:+528121105318" style="color:inherit;">+52 81 2110-5318</a></span>
         </div>
         <div class="footer-contact-item">
-          <i class="fas fa-clock"></i>
+          <i class="fas fa-clock" aria-hidden="true"></i>
           <span>Lun–Vie: 10:00 AM – 5:00 PM</span>
         </div>
       </div>
@@ -1742,10 +1821,10 @@
 </footer>
 
 <!-- ═══════════════════════ WA FLOATING BUTTON ═══════════════════════ -->
-<div class="wa-float">
-  <div class="wa-tooltip">¡Escríbenos ahora!</div>
-  <a href="https://wa.me/528121105318?text=Hola%2C+quiero+mi+Landing+Page" target="_blank" class="wa-float-btn">
-    <i class="fab fa-whatsapp"></i>
+<div class="wa-float" role="complementary" aria-label="Contacto rápido por WhatsApp">
+  <div class="wa-tooltip" aria-hidden="true">¡Escríbenos ahora!</div>
+  <a href="https://wa.me/528121105318?text=Hola%2C+quiero+mi+Landing+Page" target="_blank" class="wa-float-btn" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
   </a>
 </div>
 
