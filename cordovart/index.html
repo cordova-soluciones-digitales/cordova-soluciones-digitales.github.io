@@ -495,7 +495,12 @@
       top: calc(var(--header-h) + var(--safe-t));
       left: 0;
       right: 0;
-      bottom: 0;
+      /* Nota: no usamos bottom:0 porque el backdrop-filter del header
+         crea un containing block para elementos fixed hijos, y bottom
+         quedaría relativo a la altura del header (~60px) en vez de la
+         ventana completa. Por eso calculamos la altura explícitamente. */
+      height: calc(100vh - var(--header-h) - var(--safe-t));
+      height: calc(100dvh - var(--header-h) - var(--safe-t));
       background: var(--void);
       display: flex;
       flex-direction: column;
@@ -505,6 +510,7 @@
       transform: translateY(-110%);
       transition: transform .3s ease;
       overflow-y: auto;
+      z-index: 90;
     }
 
     .nav-links.open {
@@ -582,6 +588,7 @@
         transform: none;
         transition: none;
         overflow: visible;
+        height: auto;
       }
 
       .nav-links a {
@@ -1194,6 +1201,16 @@
       }
     }
 
+    .pricing .section-head {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pricing .eyebrow {
+      justify-content: center;
+    }
+
     .pricing__table {
       width: 100%;
       border-collapse: separate;
@@ -1202,7 +1219,7 @@
     }
 
     .pricing__table caption {
-      text-align: left;
+      text-align: center;
       color: var(--ink-muted);
       margin-bottom: 1rem;
       font-size: .85rem
@@ -1884,6 +1901,34 @@
         gap: 1rem;
         font-size: .85rem;
         text-align: left;
+      }
+    }
+
+    /* Footer centrado en mobile */
+    @media (max-width: 599px) {
+      .footer__grid {
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer__brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer__links {
+        align-items: center;
+      }
+
+      .footer__links > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer__social {
+        justify-content: center;
       }
     }
 
