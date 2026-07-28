@@ -1,6 +1,6 @@
 // Nombre de caché — súbelo (v2, v3...) cada vez que cambies index.html
 // para forzar que los usuarios reciban la versión nueva.
-const CACHE_NAME = 'escaner-nutrimental-v1';
+const CACHE_NAME = 'escaner-nutrimental-v2';
 
 // App shell: lo esencial para que la interfaz cargue offline.
 const APP_SHELL = [
@@ -57,6 +57,12 @@ self.addEventListener('fetch', (event) => {
     if (request.method !== 'GET') return;
 
     const url = new URL(request.url);
+
+    // Ignora esquemas que la Cache API no soporta (ej. chrome-extension://,
+    // moz-extension://, etc.) — típicamente peticiones de extensiones del
+    // navegador que no tienen nada que ver con nuestra app.
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return;
+
     const esNavegacion = request.mode === 'navigate';
 
     if (esNavegacion) {
