@@ -1,6 +1,6 @@
 // Nombre de caché — súbelo (v2, v3...) cada vez que cambies index.html
 // para forzar que los usuarios reciban la versión nueva.
-const CACHE_NAME = 'escaner-nutrimental-v2';
+const CACHE_NAME = 'escaner-nutrimental-v3';
 
 // App shell: lo esencial para que la interfaz cargue offline.
 const APP_SHELL = [
@@ -53,7 +53,7 @@ self.addEventListener('activate', (event) => {
 //   caché si no hay conexión, así el usuario siempre ve la versión más nueva
 //   cuando hay internet.
 self.addEventListener('fetch', (event) => {
-    const {request} = event;
+    const { request } = event;
     if (request.method !== 'GET') return;
 
     const url = new URL(request.url);
