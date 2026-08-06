@@ -14,7 +14,7 @@
  * - Limpia cachés de versiones anteriores en "activate".
  */
 
-const CACHE_VERSION = 'v8';
+const CACHE_VERSION = 'v10';
 const CACHE_NAME = `tienda-app-shell-${CACHE_VERSION}`;
 
 // App shell local
