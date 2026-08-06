@@ -14,7 +14,7 @@
  * - Limpia cachés de versiones anteriores en "activate".
  */
 
-const CACHE_VERSION = 'v10';
+const CACHE_VERSION = 'v13';
 const CACHE_NAME = `tienda-app-shell-${CACHE_VERSION}`;
 
 // App shell local
@@ -84,6 +84,15 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
     const {request} = event;
+
+    // Ignora esquemas que no sean http/https — por ejemplo "chrome-extension://",
+    // que Chrome dispara para recursos inyectados por extensiones del
+    // navegador (React/Vue DevTools, bloqueadores de anuncios, etc.). La
+    // Cache API no soporta esos esquemas: si se intenta cachear uno,
+    // cache.put() tira "Failed to execute 'put' on 'Cache': Request scheme
+    // ... is unsupported". Con este return, esas peticiones ni siquiera
+    // pasan por el service worker (las maneja el navegador normalmente).
+    if (!request.url.startsWith('http')) return;
 
     // Solo interceptamos GET; el resto (POST, etc.) pasa directo a la red.
     if (request.method !== 'GET') return;
