@@ -14,7 +14,7 @@
  * - Limpia cachés de versiones anteriores en "activate".
  */
 
-const CACHE_VERSION = 'v14';
+const CACHE_VERSION = 'v18';
 const CACHE_NAME = `tienda-app-shell-${CACHE_VERSION}`;
 
 // App shell local
@@ -44,7 +44,16 @@ const APP_SHELL = [
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css',
-    'https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js'
+    'https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js',
+
+    // Los .woff2 que carga por detrás la hoja de Font Awesome de arriba
+    // (vía @font-face). Sin esto, precachear solo el CSS no alcanza: los
+    // íconos (fa-solid/fa-regular/fa-brands, que la app usa los tres) se
+    // verían rotos en la primerísima visita offline, antes de que el
+    // navegador los pidiera y el cacheFirst() los guardara por su cuenta.
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-regular-400.woff2',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-brands-400.woff2'
 ];
 
 self.addEventListener('install', (event) => {
