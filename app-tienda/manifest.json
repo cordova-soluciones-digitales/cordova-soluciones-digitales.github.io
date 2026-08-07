@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Tienda App",
-  "short_name": "Tienda",
+  "name": "Tienda México",
+  "short_name": "Tienda México",
   "description": "Aplicación de tienda con catálogo, favoritos y carrito de compra.",
   "start_url": "./index.html",
   "scope": "./",
